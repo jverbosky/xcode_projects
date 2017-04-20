@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func openMenu(_ sender: Any) {
         if (menuShowing) {
-            leadingConstraint.constant = -240
+            leadingConstraint.constant = -250
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
