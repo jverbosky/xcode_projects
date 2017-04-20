@@ -21,15 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-nn-Q9O" userLabel="View 1">
-                                <rect key="frame" x="0.0" y="64" width="300" height="603"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-nn-Q9O" userLabel="Menu View">
+                                <rect key="frame" x="0.0" y="64" width="240" height="603"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-tM-JQd">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="713"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otT-iS-uyA">
-                                                <rect key="frame" x="0.0" y="-63" width="300" height="36"/>
+                                                <rect key="frame" x="0.0" y="-63" width="240" height="36"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.18239692875790076" green="0.28693656174757365" blue="0.65758581606217614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -41,13 +41,21 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="hxh-vi-YaW"/>
+                                    <constraint firstAttribute="width" constant="240" id="hxh-vi-YaW"/>
                                 </constraints>
                             </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rr-qc-K9Z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.6311818387" green="0.68196786330000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4rr-qc-K9Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Fb-DM-4qX"/>
+                            <constraint firstItem="4rr-qc-K9Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3RO-Pf-OCV"/>
+                            <constraint firstAttribute="trailing" secondItem="4rr-qc-K9Z" secondAttribute="trailing" id="6Q4-pu-54F"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gBh-nn-Q9O" secondAttribute="bottom" id="Vuy-aR-s7r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4rr-qc-K9Z" secondAttribute="bottom" id="XSy-b3-WSp"/>
                             <constraint firstItem="gBh-nn-Q9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pVV-tF-T8g"/>
                             <constraint firstItem="gBh-nn-Q9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sdx-4a-5uj"/>
                         </constraints>
@@ -62,7 +70,8 @@
                     <connections>
                         <outlet property="leadingConstraint" destination="pVV-tF-T8g" id="hq9-iS-M2P"/>
                         <outlet property="myScrollView" destination="R9e-tM-JQd" id="kT8-YG-z6V"/>
-                        <outlet property="shadowView" destination="gBh-nn-Q9O" id="cye-8K-xVc"/>
+                        <outlet property="myShadowView" destination="gBh-nn-Q9O" id="gQu-Nq-4W1"/>
+                        <outlet property="myWebView" destination="4rr-qc-K9Z" id="Wdm-dL-DRV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
