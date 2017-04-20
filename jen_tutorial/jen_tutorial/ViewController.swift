@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var myScrollView: UIScrollView!
+    @IBOutlet weak var shadowView: UIView!
     
     override func viewDidLoad() {
         myScrollView.contentSize.height = 1000
+        shadowView.layer.shadowOpacity = 1
+        shadowView.layer.shadowRadius = 6
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
