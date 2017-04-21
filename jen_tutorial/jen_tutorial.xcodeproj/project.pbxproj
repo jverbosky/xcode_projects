@@ -516,6 +516,7 @@
 				B2272B7C1EA904D400E48121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2272B7D1EA904D400E48121 /* Build configuration list for PBXNativeTarget "jen_tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				B2272B7F1EA904D400E48121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2272B801EA904D400E48121 /* Build configuration list for PBXNativeTarget "jen_tutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				B2272B821EA904D400E48121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
