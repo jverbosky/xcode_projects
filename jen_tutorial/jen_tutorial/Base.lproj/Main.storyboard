@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-nn-Q9O" userLabel="Menu View">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-nn-Q9O" userLabel="Menu View">
                                 <rect key="frame" x="0.0" y="64" width="140" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otT-iS-uyA">
@@ -53,7 +53,7 @@
                             <constraint firstAttribute="trailing" secondItem="4rr-qc-K9Z" secondAttribute="trailing" id="NWT-id-s3l"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gBh-nn-Q9O" secondAttribute="bottom" id="Vuy-aR-s7r"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4rr-qc-K9Z" secondAttribute="bottom" id="dcJ-Dg-uF2"/>
-                            <constraint firstItem="gBh-nn-Q9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pVV-tF-T8g"/>
+                            <constraint firstItem="gBh-nn-Q9O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-150" id="pVV-tF-T8g"/>
                             <constraint firstItem="gBh-nn-Q9O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sdx-4a-5uj"/>
                             <constraint firstItem="4rr-qc-K9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uoi-nc-ceI"/>
                         </constraints>

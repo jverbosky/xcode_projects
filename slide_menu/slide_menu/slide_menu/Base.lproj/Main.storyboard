@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEz-Nx-0Nx">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OEz-Nx-0Nx">
                                 <rect key="frame" x="0.0" y="64" width="140" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6md-8x-hsU">
@@ -51,7 +51,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OEz-Nx-0Nx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2Jy-jl-ilA"/>
-                            <constraint firstItem="OEz-Nx-0Nx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H0t-8d-BRH"/>
+                            <constraint firstItem="OEz-Nx-0Nx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-140" id="H0t-8d-BRH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OEz-Nx-0Nx" secondAttribute="bottom" id="KLs-nh-8Qu"/>
                         </constraints>
                     </view>
