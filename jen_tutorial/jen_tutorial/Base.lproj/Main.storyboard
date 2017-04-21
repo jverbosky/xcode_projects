@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Mined Minds Mentoring-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jen_tutorial" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,26 +26,24 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-nn-Q9O" userLabel="Menu View">
-                                <rect key="frame" x="0.0" y="64" width="240" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otT-iS-uyA">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.18239692875790076" green="0.28693656174757365" blue="0.65758581606217614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9e-tM-JQd">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="713"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otT-iS-uyA">
-                                                <rect key="frame" x="0.0" y="-63" width="240" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.18239692875790076" green="0.28693656174757365" blue="0.65758581606217614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                     </scrollView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="hxh-vi-YaW"/>
+                                    <constraint firstAttribute="width" constant="140" id="hxh-vi-YaW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -60,8 +58,8 @@
                             <constraint firstItem="4rr-qc-K9Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uoi-nc-ceI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lD3-Cl-aMl">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wPs-wd-wS2">
+                    <navigationItem key="navigationItem" title="Mined Minds Mentoring" id="lD3-Cl-aMl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="wPs-wd-wS2">
                             <connections>
                                 <action selector="openMenu:" destination="BYZ-38-t0r" id="wg3-j4-I17"/>
                             </connections>

@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var menuShowing = false
-    
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var myShadowView: UIView!
     @IBOutlet weak var myWebView: UIWebView!
     
+    var menuShowing = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         myScrollView.contentSize.height = 1000
         myShadowView.layer.shadowOpacity = 1
         myShadowView.layer.shadowRadius = 6
@@ -27,14 +26,9 @@ class ViewController: UIViewController {
         myWebView.loadRequest(URLRequest(url: url!))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func openMenu(_ sender: Any) {
         if (menuShowing) {
-            leadingConstraint.constant = -250
+            leadingConstraint.constant = -150
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
             })
